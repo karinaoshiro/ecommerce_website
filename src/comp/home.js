@@ -115,9 +115,9 @@ const Home = () => {
                                     <div className='img_box'>
                                         <img src={curElm.Img} alt={curElm.Title}></img>
                                         <div className='icon'>
-                                        <FiShoppingCart />
-                                        <FaRegEye />
-                                        <CiHeart />
+                                    <li><FiShoppingCart /> </li>
+                                    <li><FaRegEye /> </li>
+                                    <li><CiHeart /> </li>
                                         </div>
                                     </div>
                                     <div className='detail'>
@@ -132,6 +132,20 @@ const Home = () => {
                 }
 
             </div>
+        </div>
+        <div className='banner'>
+            <div className='container'>
+            <div className='detail'>
+                <h4>LATEST TECHNOLOGY</h4>
+                <h3>Beat HeadPhone 10.2 9th Gen</h3>
+                <p> $ 989 </p>
+                <Link to='/product' className='link'>Shop Now <HiMiniArrowRight/> </Link>
+            </div>
+            <div className='img_box'>
+                <img src='./headphone.jpg'></img>
+            </div>
+            </div>
+            
         </div>
         </>
     )
