@@ -8,7 +8,7 @@ import { FiLogOut } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import './nav.css';
 import { useAuth0 } from "@auth0/auth0-react";
-const Nav = () => {
+const Nav = ({searchbtn}) => {
     const [search, setSearch] = useState()
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
     return (
@@ -26,7 +26,7 @@ const Nav = () => {
                     </div>
                     <div className="search_box">
                         <input type='text' value={search} placeholder='Search your product' autoComplete="off" onChange={(e) => setSearch(e.target.value) } ></input>
-                        <button>Search</button>
+                        <button onClick={() => searchbtn (search)} >Search</button>
                     </div>
                     <div className='icon'>
                         {
