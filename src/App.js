@@ -7,6 +7,7 @@ import Productdetail from './comp/productdetails';
 
 const App = () => {
   const [product, setProduct] = useState(Productdetail)
+  
   const searchbtn = (product) =>
     {
       const change = Productdetail.filter((x) =>
